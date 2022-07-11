@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>   
+            Body {  
+              font-family: sans-serif;  
+              background-color: yellow;  
+            }  
+            button {   
+                   background-color: #4CAF50;   
+                   width: 50%;  
+                    color: orange;   
+                    padding: 15px;   
+                    margin: 10px 0px;   
+                    border: none;   
+                    cursor: pointer;   
+                     }   
+             form {    
+                    justify-content: center;
+                }   
+             input[type=text], input[type=password] {   
+                    width: 50%;   
+                    margin: 8px 0;  
+                    padding: 12px 20px;   
+                    display: inline-block;   
+                    border: 2px solid green;   
+                    box-sizing: border-box;   
+                    border-radius: 10px;
+                }  
+             button:hover {   
+                    opacity: 0.7;   
+                }   
+              .login{
+                border-radius: 10px;
+                width: 30%;
+              }
+              .signup{
+                border-radius: 10px;
+                width: 30%;
+              }
+              .cancelbtn {   
+                    width: auto;   
+                    padding: 10px 18px;  
+                    margin: 10px 5px;  
+                }   
+                    
+                 
+             .container {   
+                    padding: 250px;    
+                    align-content: center;
+                    justify-items: center;
+                }   
+            </style>
+    </head>
+    <body bgcolor="yellow">
+        <!--<h1>hello world</h1>-->
+    <form>
+        <div class="container">  
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" id="username" required> 
+            <br> 
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required> 
+            <br> 
+               <button type="submit" class="login">Login</button>   
+               <button type="submit" class="signup">Signup</button>
+               <tt>Forgot<a href="">Password</a>?</tt>
+        </div>  
+    </form>  
+    </body>
+</html>
