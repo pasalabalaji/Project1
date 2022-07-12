@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGNUP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                 background-color: #fcde67;
+                 font-family: serif;
+                 font-size: 20px;
+                 font-weight: 30px;
+            }
+            button {   
+                   background-color: #4CAF50;   
+                   width: 15%;  
+                    color: whitesmoke;   
+                    padding: 15px;   
+                    margin: 10px 0px;   
+                    border: none;   
+                    cursor: pointer; 
+                    border-radius: 5px;  
+                     }
+            .username{
+                     width: 50%;
+                     border-radius: 10px;
+            }
+       
+            input[type=text], input[type=password] {   
+                    width: 30%;   
+                    margin: 10px 0;  
+                    padding: 15px 30px;   
+                    display: inline-block;   
+                    border: 2px solid blue;   
+                    box-sizing: border-box;   
+                    border-radius: 10px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            .container{
+                       padding: 150px;
+                       column-gap: 10px;
+               }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <form style="text-align: center">
+              <label>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="text" class="username" placeholder="Please enter your full name " required>
+              <br>
+              &nbsp;
+              <label>Mobile number:</label>
+              &nbsp;
+              <input type="password" class="mobile_number" name="mobile_number" maxlength="10" placeholder="Please enter your mobile number " required>
+              <br>
+              &nbsp;
+              <label>Alternative number:</label>
+              &nbsp;
+              <input type="password" class="mobile_number" name="mobile_number_2" maxlength="10" placeholder="Please enter your alternate mobile number ">
+              <br>
+              <br>
+              <label>Please select your role</label>
+              <input type="radio" id="Customer" name="customer_type" value="Microsoft" checked>
+              <label for="Customer">Customer</label>
+              <input type="radio" id="Merchant" name="customer_type" value="Microsoft" checked>
+              <label for="Merchant">Merchant</label>
+              <br>
+              <br>
+              <label>Select DOB&nbsp;</label>
+              <input type="date" name="DOB" required>
+              <br>
+              <br>
+              <button type="submit" class="signup">Signup</button>
+        </form>
+    </div>
+    </body>
+</html>
