@@ -2,21 +2,29 @@
 <html>
     <head>
         <title>LOGIN</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="viewport"
+              content="width=device-width,
+                       initial-scale=1" />
+                       <script src="FRONTWORK.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
         <style>   
             Body {  
-              font-family: sans-serif;  
-              background-color: yellow;  
+              font-family: helvetica;  
+              background-color: hsl(48, 96%, 70%);  
             }  
             button {   
-                   background-color: #4CAF50;   
-                   width: 50%;  
-                    color: orange;   
-                    padding: 15px;   
+                   background-color: blue;   
+                   width: 25%;  
+                    color: whitesmoke;   
+                    padding: 10px;   
                     margin: 10px 0px;   
                     border: none;   
-                    cursor: pointer;   
+                    cursor: pointer; 
+                    border-radius: 10px;  
                      }   
+           
              form {    
                     justify-content: center;
                 }   
@@ -25,7 +33,7 @@
                     margin: 8px 0;  
                     padding: 12px 20px;   
                     display: inline-block;   
-                    border: 2px solid green;   
+                    border: 2px solid whitesmoke;   
                     box-sizing: border-box;   
                     border-radius: 10px;
                 }  
@@ -40,34 +48,35 @@
                 border-radius: 10px;
                 width: 30%;
               }
-              .cancelbtn {   
-                    width: auto;   
-                    padding: 10px 18px;  
-                    margin: 10px 5px;  
-                }   
+             
                     
                  
-             .container {   
+             .container{   
                     padding: 250px;    
                     align-content: center;
                     justify-items: center;
                 }   
             </style>
+            <!-- CSS only -->
+
     </head>
     <body bgcolor="yellow">
         <!--<h1>hello world</h1>-->
     <form>
-        <div class="container">  
+        
+        <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" id="username" required> 
             <br> 
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password" name="password" required> 
-            <br> 
-               <button type="submit" class="login">Login</button>   
-               <button type="submit" class="signup">Signup</button>
-               <tt>Forgot<a href="">Password</a>?</tt>
+            <br>
+            <button type="submit">Login</button>
+            <tt style="padding: 10px;"><a href="SIGNUP.html" target="blank">Signup</a>?</tt> 
+           <tt style="padding: 10px;">Forgot<a href="">Password</a>?</tt>
         </div>  
+       
     </form>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
